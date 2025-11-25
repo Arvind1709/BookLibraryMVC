@@ -1,0 +1,27 @@
+﻿@model List<BookLibraryMVC.Models.Employees>
+
+<h2>Salary Summary by Department</h2>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Department</th>
+            <th>Total Employees</th>
+            <th>Total Salary</th>
+            <th>Avg Salary</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Department</td>
+                <td>@item.TotalEmployees</td>
+                <td>@item.TotalSalary</td>
+                <td>@item.AvgSalary</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

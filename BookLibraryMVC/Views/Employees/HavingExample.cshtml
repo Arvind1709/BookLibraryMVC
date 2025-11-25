@@ -1,0 +1,23 @@
+﻿@model List<BookLibraryMVC.Models.Employees>
+
+<h2>Departments With More Than 2 Employees</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Department</th>
+            <th>Total Employees</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Department</td>
+                <td>@item.TotalEmployees</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
